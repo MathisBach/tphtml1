@@ -38,8 +38,10 @@
 body{
     font-family: 'open sans'sans-serif;
     background-size: 100%;
-    background-image: url("/assets/images/Ligue-des-champions-le-PSG-domine-logiquement-l-AC-Milan-et-reprend-la-tete-de-son-groupe.jpg")
+    background-image: url("/assets/images/Ligue-des-champions-le-PSG-domine-logiquement-l-AC-Milan-et-reprend-la-tete-de-son-groupe.jpg");
+    color: rgb(201, 247, 20);
 }
+
 nav{
     background: #000; /* fond */
     color: #fff;
