@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - ESICAD TP1 DEV WEB</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        /* CSS pour le diaporama */
+        .diaporama-container {
+            position: relative;
+            width: 960px; /* Largeur du diaporama */
+            height: 500px; /* Hauteur du diaporama */
+            margin: 0 auto;
+            border: 3px solid #333;
+            overflow: hidden;
+        }
+
+        .diaporama-container .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .diaporama-container .slide:first-child {
+            opacity: 1;
+        }
+
+        /* Animation du diaporama */
+        @keyframes diaporama-animation {
+            0% { opacity: 0; }
+            25% { opacity: 1; }
+            75% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="tabs">
+            <div class="tab-registers">
+                <nav>
+                    
+                    
+                        <a href="https://www.psg.fr/club/histoire">Histoire du PSG</a>
+                        <a href="https://www.leparisien.fr/sports/football/psg/">actualités</a> <!-- Nouveau lien ajouté -->
+                        <a href="https://www.youtube.com/watch?v=LYE2su0vS1c">visite du parc des princes</a>
+                    </nav>
+                    
+                    
+                
+            </div>
+            <div class="tab-bodies">
+                <div style="display: block;">
+                    Bienvenue sur le site officiel du Paris Saint-Germain !
+                    <p>Le Paris Saint-Germain, couramment abrégé en Paris SG ou PSG, est un club de football français, fondé en 1970. Il s'agit du club le plus titré en France avec de nombreux trophées nationaux et internationaux.</p>
+                    <p>Explorez notre site pour découvrir les dernières actualités, l'histoire riche du club, et n'hésitez pas à nous contacter pour toute information supplémentaire.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <h1>Bienvenue sur le site officiel du Paris Saint-Germain !</h1>
+    <p>Le Paris Saint-Germain, couramment abrégé en Paris SG ou PSG, est un club de football français, fondé en 1970. Il s'agit du club le plus titré en France avec de nombreux trophées nationaux et internationaux.</p>
+    <p>Explorez notre site pour découvrir les dernières actualités, l'histoire riche du club, et n'hésitez pas à nous contacter pour toute information supplémentaire.</p>
+
+    <!-- Structure du diaporama -->
+    <div class="diaporama-container">
+        <img src="assets/images/leo di.jpg" alt="Leo" class="slide">
+        <img src="assets/images/Kylian-Mbappe-Le-Real-Madrid-Attend-la-Decision-Cruciale.jpg" alt="Mbappe" class="slide">
+        <img src="assets/images/Mbappe mallot real madrid.jpg" alt="Mbappe" class="slide">
+        <img src="assets/images/Kylian-Mbappe-Le-Real-Madrid-Attend-la-Decision-Cruciale.jpg" alt="Mbappe" class="slide">
+    </div>
+
+    <script src="assets/script.js" defer></script>
+</body>
+
+</html>
+
+
